@@ -1,4 +1,5 @@
- // Initialize Firebase
+
+  // Initialize Firebase
 /*  var config = {
     apiKey: "AIzaSyAO0b8UIE87PlrM4o1ouMnKLgdFCMaJgUg",
     authDomain: "team-mofo-project-1.firebaseapp.com",
