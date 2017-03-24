@@ -4,10 +4,10 @@
 	
 		<title>Movie Interview Information</title>
 		<meta charset='utf-8'>
-		<meta name=viewport content="width-device-width, initial scale=1"/>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 		<link href="http://bootswatch.com/united/bootstrap.min.css" type="text/css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
 
 	</head>
@@ -15,39 +15,34 @@
 <body>
 
 <div class="container"> 
-
- <div class="jumbotron">
- 
-	<div class="row">
+  <div class="jumbotron">
+	  <div class="row">
        <img src="assets/images/MofoLogo.jpg" alt="logo" style="width:250px;height:150px;" id="logo"></img>
-	   
-	   <input type="text" class="search" id="searchBar" placeholder="Enter Movie Title..."></input><button class="search btn btn-primary" id="submit" >Submit</button>
+    	 <input type="text" class="search" id="movieName" placeholder="Enter Movie Title..."></input>
+       <button class="search btn btn-primary" id="submit" >Submit</button>
+    </div>  
+  </div>
 
-	 </div>  
-	   
- </div>
-
-
- <div class="container">
-        <div class="col-xs-3 col-md-3">
-          <h3>Pick a name:</h3>
-          <h3>Director</h3>
-          <div id="directorNames"></div>
-          <h3>Actors</h3>
-          <div id="actorNames"></div>
-        </div>
-        <div class="col-xs-9 col-md-9">
-          <div id="uTubes"></div>
-          <h2>Previous Searches:</h2>
-          <div class="list-group" id="lastSearch"></div>
-        </div>
-      </div>
+  <div class="container">
+    <div id="nameBox" class="col-xs-3 col-md-3">
+      <h3>Pick a name:</h3>
+      <h3>Director</h3>
+      <div id="directorNames"></div>
+      <h3>Actors</h3>
+      <div id="actorNames"></div>
     </div>
+    <div class="col-xs-9 col-md-9">
+      <div id="uTubes"></div>
+        <h2>Previous Searches:</h2>
+      <div class="list-group" id="lastSearch"></div>
+    </div>
+  </div>
+</div>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Added Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-  </body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
 </html>

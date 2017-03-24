@@ -1,0 +1,32 @@
+
+.jumbotron  {
+	background-color:#a52121 !important;
+	border: 5px dotted yellow;
+}
+
+.btn-primary {
+	background-color: #5a8ee2;
+}
+
+#logo{
+	margin-right: 200px;
+	border: 5px double black;
+}
+
+#nameBox, #lastSearch, h2, h3 {
+	font-family: 'Acme', sans-serif !important;
+}
+
+#nameBox {
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+
+#uTubes {
+	border-bottom: 2px solid black;
+}
+
+.prevButts { 
+	border: 3px double black;
+
+}
