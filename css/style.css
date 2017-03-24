@@ -1,0 +1,30 @@
+.jumbotron  {
+	
+	background-color:#a52121 !important;
+
+}
+
+
+#logo{
+
+margin-right: 500px;
+
+}
+
+
+a:link {
+    color: white;
+}
+
+a.highlight:hover {
+    color: #81abef;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
