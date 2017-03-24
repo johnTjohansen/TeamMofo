@@ -1,12 +1,13 @@
-  // declare global variables
+// declare global variables
   var movieEntered = "";
   var nameEntered = "";
 
   var prevSearch = [];
   var searchObj = {};
   var searchText = "";
+  var prevSplit = [];
 
- // Initialize Firebase
+// Initialize Firebase
   var config = {
     apiKey: "AIzaSyAO0b8UIE87PlrM4o1ouMnKLgdFCMaJgUg",
     authDomain: "team-mofo-project-1.firebaseapp.com",
@@ -34,6 +35,26 @@
     buildNameButts();
   });
  
+ // When a previous search button is pressed, use those search keys to refresh the 
+ // data on the HTML
+  $(document).on("click", ".prevButts", function() {
+    prevChosen = $(this).text();
+    console.log("prev button clicked " + prevChosen);
+    prevSplit = prevChosen.split(" - ");
+    movieEntered = prevSplit[0];
+    nameEntered = prevSplit[1];
+
+    // clear out old name buttons
+    $("#directorNames").empty();
+    $("#actorNames").empty();
+
+    // Rebuild the name buttons using previous search movie key
+    buildNameButts()
+
+// Call function to refresh youTube search results using previous keys
+
+  });
+
  // When a name button is pressed, search Youtube for related videos
   $(document).on("click", ".nameButts", function() {
     nameEntered = $(this).text();
@@ -43,7 +64,6 @@
 // youtube retrieval code goes here
 
   });
-
 
   // Firebase is always watching for changes to the data.
   // When changes occurs it will print them to console and html
