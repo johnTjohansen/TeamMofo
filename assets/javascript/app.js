@@ -66,11 +66,12 @@
   });
 
   // Firebase is always watching for changes to the data.
-  // When changes occurs it will print them to console and html
+  // When changes occur it will print them to console and html
   database.ref().on("value", function(snapshot) {
     console.log(snapshot.val());
     prevSearch = snapshot.val().sArray;
     console.log(prevSearch);
+    // clear previous Search container for refreshing
     $("#lastSearch").empty();
     // build previous searches list
     for (var i=0; i < prevSearch.length; i++) {
