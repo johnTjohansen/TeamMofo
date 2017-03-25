@@ -87,7 +87,7 @@
 
   function buildNameButts() {
     // construct our URL
-    var queryURL = "http://www.omdbapi.com/?t=" + movieEntered + "&y=&plot=short&r=json";
+    var queryURL = "https://www.omdbapi.com/?t=" + movieEntered + "&y=&plot=short&r=json";
     // Use $ajax to call OMDB API with movie title,
     // then take the response data and display directors and actors as buttons
     // for display in the name selection div.
